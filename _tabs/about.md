@@ -8,7 +8,7 @@ liquid: true
 
 ![banner](/assets/img/about/akash.jpg)
 
-👋 Hello, I'm Akash Jadhv, an accomplished Software Engineer with a solid foundation in the field of Information Technology. I have a passion for delving deep into technology, understanding it at its core, and leveraging that knowledge to create innovative solutions. My commitment to excellence is evident in my contributions to open-source projects, detailed in [this blog post](/posts/open-source-contributions).
+👋 Hello, I'm Akash Jadhav, an accomplished Software Engineer with a solid foundation in the field of Information Technology. I have a passion for delving deep into technology, understanding it at its core, and leveraging that knowledge to create innovative solutions. My commitment to excellence is evident in my contributions to open-source projects, detailed in [this blog post](/posts/open-source-contributions).
 
 🚀 As a software craftsman, I pride myself on implementing best practices and adhering to idiomatics of programming language. I prioritize writing maintainable, clean code that not only meets current project needs but also stands the test of time. My aim is to deliver solutions that not only solve problems but also elevate the overall quality of the codebase.
 
