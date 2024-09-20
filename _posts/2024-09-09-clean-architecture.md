@@ -27,55 +27,50 @@ Here's a visual representation of the layered architecture:
 
 ```mermaid
 flowchart TD
+    subgraph Client
+        E1[External Client]
+    end
+
+    subgraph APIGateway
+        F1[API Gateway]
+    end
+
     subgraph App_Layer
-        direction LR
-        A1[HTTP Request/GRPC Request]
         A2[Controller/Handler]
         A3[Domain Model]
         A4[Call to Service Layer]
     end
 
     subgraph Service_Layer
-        direction LR
         B1[Service]
         B2[Domain Model]
         B3[Call to Database Layer]
-        B4[Return DTO]
     end
 
     subgraph Database_Layer
-        direction LR
         C1[Receive Domain Model]
-        C2[Convert to ORM Model]
+        C2[Convert to ORM/Database Model]
         C3[Save to Database]
         C4[Return DTO]
-        C5[Database Models]
     end
 
-    subgraph Models
-        direction LR
-        D1[Domain Models]
-        D2[DTOs]
-    end
-
-    App_Layer -->|Receives Request| A2
+    %% Request flow
+    E1 -->|Sends Request| F1
+    F1 -->|Routes Request| A2
     A2 -->|Maps Request Data| A3
-    A3 -->|Calls Service Layer| A4
+    A3 --> A4
     A4 --> B1
     B1 -->|Processes Business Logic| B2
     B2 -->|Calls Database Layer| B3
     B3 --> C1
     C1 -->|Converts Domain Model| C2
-    C2 -->|Saves ORM Model| C3
-    C3 -->|Returns DTO| C4
-    C4 -->|Returns to Service Layer| B4
-    B4 -->|Returns to App Layer| A4
-    A4 -->|Returns Response| A1
-
-    Models --> D1
-    Models --> D2
-    C2 --> C5
-    C5 -->|Lives within| Database_Layer
+    C2 --> C3
+    C3 --> C4
+    C4 -->|Returns to Service Layer| B1
+    B1 -->|Returns DTO| A4
+    A4 -->|Returns DTO| A2
+    A2 -->|Returns Response| F1
+    F1 -->|Returns to Client| E1
 ```
 
 ## Example Flow for User Creation
