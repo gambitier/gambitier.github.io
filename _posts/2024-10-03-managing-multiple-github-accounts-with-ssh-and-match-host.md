@@ -96,7 +96,7 @@ The best way to handle multiple GitHub accounts is to use SSH keys and configure
 
    - To clone a repository for your work account, use:
      ```bash
-     git clone git@github.com:work-organization/project.git /path/to/project
+     GIT_SSH_COMMAND="ssh -i ~/.ssh/gambitier-work_private_key" git clone git@github.com:work-organization/project.git /path/to/project
      cd /path/to/project
      git config user.email "gambitier-work@example.com"
      git config user.name  "GambitierWork"
