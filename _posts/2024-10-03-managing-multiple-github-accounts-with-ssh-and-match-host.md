@@ -8,7 +8,6 @@ pin: false
 mermaid: false
 ---
 
-## Problem
 As a developer, you might find yourself juggling multiple GitHub accounts for different purposes — one for personal projects and another for work-related tasks. The challenge arises when you want to use both accounts on the same machine without constantly entering your password during `git push` or `git pull`.
 
 ## Solution
@@ -100,7 +99,7 @@ The best way to handle multiple GitHub accounts is to use SSH keys and configure
      git clone git@github.com:work-organization/project.git /path/to/project
      cd /path/to/project
      git config user.email "gambitier-work@example.com"
-     git config user.name  "Gambitier"
+     git config user.name  "GambitierWork"
      ```
 
    - If you already have the repository set up, change the `origin` URL to match your work account:
