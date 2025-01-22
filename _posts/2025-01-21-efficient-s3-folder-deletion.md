@@ -169,7 +169,7 @@ func listObjects(
         if len(batch) > 0 {
           objChan <- batch
         }
-        break
+        return nil
       }
       input.ContinuationToken = output.NextContinuationToken
     }
