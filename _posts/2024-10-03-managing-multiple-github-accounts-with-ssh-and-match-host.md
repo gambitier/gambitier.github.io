@@ -148,30 +148,6 @@ Once the repository is cloned, all subsequent git operations (pull, push, fetch,
 - Works with copy-pasted GitHub URLs without modification
 - Automatically selects the correct key based on repository organization
 - Better compatibility with third-party tools that expect standard GitHub URLs
-- Works seamlessly with package managers and dependency tools:
-  - `go mod tidy` for fetching private Go modules
-  - Node.js `npm install` for private packages
-  - Other tools that interact with Git repositories
-
-For example, when running `go mod tidy` with private modules:
-```bash
-# In go.mod
-module example.com/myproject
-
-require (
-    github.com/WorkOrgName/private-module v1.0.0  // Will use work SSH key
-    github.com/username/personal-module v1.0.0    // Will use personal SSH key
-)
-```
-
-{: .prompt-info }
-> When working with private repositories, you may need to configure Git to use SSH instead of HTTPS:
-> ```bash
-> git config --global --add url."git@github.com:OrganizationName/".insteadOf "https://github.com/OrganizationName/"
-> ```
-> This is particularly useful when tools like `go mod tidy` or `npm install` try to fetch private dependencies using HTTPS URLs.
-
-The SSH key selection happens automatically based on the repository URL pattern.
 
 ##### Limitations:
 {: .prompt-danger }
