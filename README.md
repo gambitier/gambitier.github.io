@@ -8,7 +8,7 @@ When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jeky
 from the theme's gem. If you have ever installed this theme gem, you can use the command
 `bundle info --path jekyll-theme-chirpy` to locate these files.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
+The Jekyll team claims that this is to leave the ball in the user's court, but this also results in users not being
 able to enjoy the out-of-the-box experience when using feature-rich themes.
 
 To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
@@ -29,6 +29,41 @@ latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so tha
 
 Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
 the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+
+### Ruby Environment Setup
+
+This project requires Ruby 3.1.0. Here's how to set it up:
+
+1. Install rbenv (Ruby Version Manager):
+   ```bash
+   # On macOS with Homebrew
+   brew install rbenv ruby-build
+
+   # Add to your shell (add to ~/.zshrc or ~/.bashrc)
+   export PATH="$HOME/.rbenv/bin:$PATH"
+   eval "$(rbenv init -)"
+   
+   # Reload shell configuration
+   source ~/.zshrc  # or source ~/.bashrc
+   ```
+
+2. Install and set Ruby version:
+   ```bash
+   # Install Ruby 3.1.0
+   rbenv install 3.1.0
+
+   # Set local version for this project
+   rbenv local 3.1.0
+
+   # Verify installation
+   ruby -v  # Should show 3.1.0
+   ```
+
+3. Install dependencies:
+   ```bash
+   gem install bundler
+   bundle install
+   ```
 
 ## Installation
 
