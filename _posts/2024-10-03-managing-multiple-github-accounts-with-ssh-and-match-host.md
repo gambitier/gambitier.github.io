@@ -164,6 +164,13 @@ require (
 )
 ```
 
+{: .prompt-info }
+> When working with private repositories, you may need to configure Git to use SSH instead of HTTPS:
+> ```bash
+> git config --global --add url."git@github.com:OrganizationName/".insteadOf "https://github.com/OrganizationName/"
+> ```
+> This is particularly useful when tools like `go mod tidy` or `npm install` try to fetch private dependencies using HTTPS URLs.
+
 The SSH key selection happens automatically based on the repository URL pattern.
 
 ##### Limitations:
