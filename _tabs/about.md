@@ -15,7 +15,7 @@ liquid: true
 🌐 For collaboration or any queries, feel free to reach out to me.
 
 - Email: [akash.jadhav.cse@gmail.com](mailto:akash.jadhav.cse@gmail.com)
-- Resume: [Download my latest resume here](https://gambitier-resume.netlify.app/akash_jadhav_cv.pdf)
+- Resume: [Download my latest resume here](https://gambitier-resume.netlify.app)
 
 ## Skills
 
