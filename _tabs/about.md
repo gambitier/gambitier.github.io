@@ -8,25 +8,27 @@ liquid: true
 
 ![banner](/assets/img/about/akash.jpg)
 
-👋 Hello, I'm Akash Jadhav, an accomplished Software Engineer with a solid foundation in the field of Information Technology. I have a passion for delving deep into technology, understanding it at its core, and leveraging that knowledge to create innovative solutions. My commitment to excellence is evident in my contributions to open-source projects, detailed in [this blog post](/posts/open-source-contributions).
+👋 Hello, I'm **Akash Jadhav**, a Software Engineer who helps businesses build robust web applications and backend systems. I specialize in creating efficient, reliable software solutions that solve real-world problems.
 
-🚀 As a software craftsman, I pride myself on implementing best practices and adhering to idiomatics of programming language. I prioritize writing maintainable, clean code that not only meets current project needs but also stands the test of time. My aim is to deliver solutions that not only solve problems but also elevate the overall quality of the codebase.
+🚀 With a focus on quality and best practices, I develop software that's not only functional but also maintainable and scalable. My work includes contributing to open-source projects and sharing knowledge through practical examples and case studies.
 
-🌐 Ready to embark on this tech journey with me? Let's dive in! For collaboration or any queries, feel free to reach out to me.
+🌐 For collaboration or any queries, feel free to reach out to me.
 
 - Email: [akash.jadhav.cse@gmail.com](mailto:akash.jadhav.cse@gmail.com)
-- Resume: [Explore my professional background here](/assets/misc/Resume.pdf)
+- Resume: [Download my latest resume here](https://gambitier-resume.netlify.app/akash_jadhav_cv.pdf)
 
 ## Skills
 
 {% capture programming_languages %}
+- Go
 - C#
 - TypeScript
 - JavaScript
 {% endcapture %}
 
 {% capture web_frameworks %}
-- Asp.net
+- Gin, Fiber (Go)
+- Asp.net Core
 - Express.js
 - NestJS
 - Fastify
@@ -34,19 +36,31 @@ liquid: true
 
 {% capture databases %}
 - SQL (MySQL, PostgreSQL, MS SQL Server)
-- NoSQL (MongoDb)
+- NoSQL (MongoDB)
+{% endcapture %}
+
+{% capture development_tools %}
+- Docker & Containerization
+- Nginx
+- Git & GitHub
+- Database Design
 {% endcapture %}
 
 {% capture orm_tools %}
-- Entity Framework
-- Dapper
-- Sequelize
-- Mongoose
-- Prisma
+- GORM (Go)
+- SQLC (Go)
+- Entity Framework (dotnet)
+- Dapper (dotnet)
+- Sequelize (nodejs)
+- Mongoose (nodejs)
+- Prisma (nodejs)
 {% endcapture %}
 
 {% capture tools %}
-- Git
+- Git & GitHub
+- Docker
+- Database Management
+- API Development
 {% endcapture %}
 
 <details>
@@ -71,6 +85,12 @@ liquid: true
 <summary>ORM Tools</summary>
 
 {{ orm_tools | markdownify }}
+</details>
+
+<details>
+<summary>Development Tools</summary>
+
+{{ development_tools | markdownify }}
 </details>
 
 <details>
