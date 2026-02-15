@@ -1,5 +1,5 @@
 ---
-title: Understanding Goroutine Leaks in Go
+title: Goroutine Leaks in Go: Why They Happen and How to Prevent Them
 date: 2026-02-15
 categories: [Go, Concurrency]
 tags: [golang, concurrency, debugging]
